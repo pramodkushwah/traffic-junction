@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.sidebar{
+    position:absolute;
+    right:0;
+    width:300px;
+    background:#424242;
+    color:white;   
+    top:0px;
+    height: 100%;
+}
