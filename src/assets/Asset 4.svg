@@ -1,0 +1,24 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1299 1291">
+	<defs>
+		<style>.cls-1{fill:#4d4d4d;}.cls-2{fill:#fff;}.cls-3{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:5px;}</style>
+	</defs>
+	<title>Asset 4</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+			<rect class="cls-1" y="578" width="646" height="155"/>
+			<path class="cls-2" d="M645.5,826C546,826,465,745,465,645.5S546,465,645.5,465,826,546,826,645.5,745,826,645.5,826Z"/>
+			<path class="cls-1" d="M645.5,540a105.5,105.5,0,1,1-74.6,30.9A104.81,104.81,0,0,1,645.5,540m0-150C504.39,390,390,504.39,390,645.5S504.39,901,645.5,901,901,786.61,901,645.5,786.61,390,645.5,390Z"/>
+			<path class="cls-2" d="M646,420a225.28,225.28,0,1,1-88,17.76A224.58,224.58,0,0,1,646,420m0-5c-127.58,0-231,103.42-231,231S518.42,877,646,877,877,773.58,877,646,773.58,415,646,415Z"/>
+			<path class="cls-3" d="M302,578v0Z"/>
+			<rect class="cls-2" x="314.5" y="589.5" width="79" height="20"/>
+			<rect class="cls-2" x="314" y="618" width="79" height="20"/>
+			<rect class="cls-2" x="314" y="645" width="79" height="20"/>
+			<rect class="cls-2" x="314" y="673" width="79" height="20"/>
+			<rect class="cls-2" x="314" y="701" width="79" height="20"/>
+			<rect class="cls-1" x="653" y="567" width="646" height="155"/>
+			<rect class="cls-1" x="582" y="645" width="155" height="646"/>
+			<rect class="cls-1" x="582" width="155" height="646"/>
+		</g>
+	</g>
+</svg>

@@ -1,33 +1,30 @@
-.box{
-    max-width:400px;
+.box {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 400px;
+  transform: translate(-50%, -50%);
 }
-.stroke,
-.stroke-dashed {
-fill: none;
-}
+
+
 
 .arm {
-fill: #4d4d4d;
+  transform-origin: 50%;
+  transform: rotateZ(0deg);
 }
 
-.stroke,
-.stroke-dashed {
-stroke: #fff;
-stroke-miterlimit: 10;
-stroke-width: 3px;
+
+.cls-1 {
+  fill: #4d4d4d;
 }
 
-.stroke-dashed {
-stroke-dasharray: 12;
+.cls-2 {
+  fill: #fff;
 }
 
-.text-white,
-.text-black {
-font-size: 24px;
-font-family: MyriadPro-Bold, Myriad Pro;
-font-weight: 700;
-}
-
-.text-white {
-fill: #fff;
+.cls-3 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
 }

@@ -1,39 +1,21 @@
 <div class="box">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 703.5 1029.05">
-    <g id="Layer_2" data-name="Layer 2">
-        <g id="Layer_1-2" data-name="Layer 1">
-            <rect id="arm-1" class="arm" x="1.5" y="345.55" width="367.5" height="317" />
-            <rect id="arm-2" class="arm" x="368.5" y="24.05" width="317" height="336" />
-            <rect class="arm" x="368.5" y="340.05" width="317" height="320" />
-            <rect id="arm-3" class="arm" x="368.5" y="658.05" width="317" height="336" />
-            <line class="stroke" x1="383" y1="22.55" x2="383" y2="363.55" />
-            <line class="stroke" x1="671.5" y1="26.05" x2="671.5" y2="993.55" />
-            <line class="stroke" x1="387" y1="642.55" x2="387" y2="995.05" />
-            <line class="stroke" x1="4" y1="363.55" x2="385" y2="363.55" />
-            <line class="stroke" y1="643.55" x2="388" y2="643.55" />
-            <line class="stroke-dashed" x1="527.5" y1="28.05" x2="527.5" y2="995.55" />
-            <line class="stroke-dashed" x1="4" y1="500.8" x2="526.25" y2="500.8" />
-            <text class="text-white" transform="translate(24.5 631.59)">
-                Arm 1
-            </text>
-            <text class="text-white" transform="translate(398.5 53.59)">
-                Arm 2
-            </text>
-            <text class="text-white" transform="translate(398.5 979.59)">
-                Arm 3
-            </text>
-            <text class="text-black" transform="translate(18.5 336.09)">
-                Slave 1
-            </text>
-            <text class="text-black" transform="translate(592.45 20.09)">
-               Slave 2
-            </text>
-            <text class="text-black" transform="translate(587.45 1014.09)">
-                Slave 3
-            </text>
-        </g>
-    </g>
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1299 1291">
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_1-2" data-name="Layer 1">
+            <g class="arm" *ngFor="let arm of arms; let i= index" [style.transform]="'rotate('+angle*i+'deg)'">
+                    <rect class="cls-1" y="578" width="646" height="155"/>
+                    <rect class="cls-2" x="314.5" y="589.5" width="79" height="20"/>
+                    <rect class="cls-2" x="314" y="618" width="79" height="20"/>
+                    <rect class="cls-2" x="314" y="645" width="79" height="20"/>
+                    <rect class="cls-2" x="314" y="673" width="79" height="20"/>
+                    <rect class="cls-2" x="314" y="701" width="79" height="20"/>
+            </g>
+			<path class="cls-2" d="M645.5,826C546,826,465,745,465,645.5S546,465,645.5,465,826,546,826,645.5,745,826,645.5,826Z"/>
+			<path class="cls-1" d="M645.5,540a105.5,105.5,0,1,1-74.6,30.9A104.81,104.81,0,0,1,645.5,540m0-150C504.39,390,390,504.39,390,645.5S504.39,901,645.5,901,901,786.61,901,645.5,786.61,390,645.5,390Z"/>
+			<path class="cls-2" d="M646,420a225.28,225.28,0,1,1-88,17.76A224.58,224.58,0,0,1,646,420m0-5c-127.58,0-231,103.42-231,231S518.42,877,646,877,877,773.58,877,646,773.58,415,646,415Z"/>
+		</g>
+	</g>
+</svg>
 </div>
 
 <app-sidebar class="sidebar"></app-sidebar>

@@ -1,5 +1,6 @@
 .header{
     padding:10px;
     background:#EF6C00;
-    text-align:center
+    text-align:center;
+    box-shadow:0 0 10px hsla(0, 0%, 0%, 0.43137254901960786);
 }
