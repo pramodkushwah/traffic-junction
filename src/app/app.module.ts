@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { Arm3Component } from './junctions/arm-3/arm-3.component';
+import { ArmService } from './service/arm.service';
 
 
 @NgModule({
@@ -14,8 +16,12 @@ import { Arm3Component } from './junctions/arm-3/arm-3.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule
+    
   ],
-  providers: [],
+  providers: [
+    ArmService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

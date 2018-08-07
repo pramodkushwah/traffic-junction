@@ -6,25 +6,43 @@
   transform: translate(-50%, -50%);
 }
 
-
-
 .arm {
   transform-origin: 50%;
   transform: rotateZ(0deg);
 }
 
-
 .cls-1 {
   fill: #4d4d4d;
 }
 
-.cls-2 {
+.cls-2,
+.cls-6 {
   fill: #fff;
 }
 
-.cls-3 {
+.cls-4,
+.cls-5 {
   fill: none;
   stroke: #fff;
   stroke-miterlimit: 10;
+}
+
+.cls-3 {
   stroke-width: 5px;
+}
+
+.cls-4,
+.cls-5 {
+  stroke-width: 3px;
+}
+
+.cls-5 {
+  stroke-dasharray: 11.6 11.6;
+}
+
+.cls-6,
+.cls-8 {
+  font-size: 18px;
+  font-family: MyriadPro-Bold, Myriad Pro;
+  font-weight: 700;
 }

@@ -3,17 +3,17 @@
 </div>
 
 <form>
-  Select arms
-<select>
-  <option disabled>Select arm</option>
-  <option> 2</option>
-  <option>3 </option>
-  <option>4 </option>
-  <option>5 </option>
-  <option>6 </option>
-  <option>7 </option>
-  <option>8 </option>
+
+  <label for="selectArms">Select arms</label>
+  <select id="selectArms" [(ngModel)]="noOfArms" name="arms" (ngModelChange)="setArms($event)">
+  <option disabled>Select Junction</option>
+  <option value="2"> Arm 2</option>
+  <option value="3">Arm 3 </option>
+  <option value="4">Arm 4 </option>
+  <option value="5">Arm 5 </option>
+  <option value="6">Arm 6 </option>
+  <option value="7">Arm 7 </option>
+  <option value="8">Arm 8 </option>
 </select>
-  
 
 </form>
