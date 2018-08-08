@@ -10,6 +10,7 @@ export class AppComponent {
   armLength:number;
   arms=[];
   angle=0;
+  rotationAngle = 0;
   constructor(public armService:ArmService){
   }
 
@@ -72,5 +73,18 @@ export class AppComponent {
         default:
           console.log('hello i am in default '+this.armLength);
     }
+  }
+
+  rotate(direction){
+    let box = document.getElementById('svg');
+    let rotationAngle = 0;
+    if(direction == 'left'){
+      this.rotationAngle += 45;
+    }
+    else{
+      this.rotationAngle -= 45;
+    }
+    box.style.transform = `rotate(${this.rotationAngle}deg)`
+
   }
 }

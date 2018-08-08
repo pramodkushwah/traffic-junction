@@ -1,4 +1,5 @@
-<div class="box">
+
+<div class="box" id="box">
     <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1299 1291">
 	<g id="Layer_2" data-name="Layer 2">
 		<g id="Layer_1-2" data-name="Layer 1">
@@ -17,7 +18,7 @@
 	</g>
 </svg> -->
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1299 1291">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1299 1291" id="svg">
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
             <!-- THIS IS ARM -> --> <g class="arm" id="" *ngFor="let arm of arms; let i= index" [style.transform]="'rotate('+angle*i+'deg)'">
@@ -47,6 +48,10 @@
         </g>
     </g>
 </svg>
+<div class="buttons">
+    <button class="rotatrLeft" (click)="rotate('left')">↺</button>
+    <button class="rotatrRight" (click)="rotate('right')">↻</button>
+</div>
 </div>
 
 <app-sidebar class="sidebar"></app-sidebar>
