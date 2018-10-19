@@ -26,6 +26,7 @@ export class AppComponent {
    this.armLength = this.armService.getArms();
   }
 
+  // function to display arms dynamically
   displayArms(){
     switch(this.armLength){
       case  2:
@@ -75,6 +76,7 @@ export class AppComponent {
     }
   }
 
+  // function to rotate the junction
   rotate(direction){
     let box = document.getElementById('svg');
     let rotationAngle = 0;
@@ -87,4 +89,26 @@ export class AppComponent {
     box.style.transform = `rotate(${this.rotationAngle}deg)`
 
   }
+
+// function to toggle lamps
+
+toggleLamp(e){
+ let green_left = document.querySelectorAll('[data-lamp="green_left"]');
+  if(e.target.value == 'Green Right'){
+    green_left[0].classList.toggle('active')
+    document.getElementById('flash1').classList.toggle('hide');
+  }
+
+}
+
+// to flash the lamp
+toggleFlash(e){
+  let green_left = document.querySelectorAll('[data-lamp="green_left"]');
+  green_left[0].classList.toggle('flash')
+}
+
+showArm(){
+    let arm = document.getElementById('selected_arm')
+    arm.style.display="block"
+}
 }

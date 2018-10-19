@@ -1,9 +1,9 @@
 .box {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  width: 400px;
-  transform: translate(-50%, -50%);
+  display:flex;
+  /* transform: translate(-50%, -50%); */
+}
+.infograph{
+  min-width:400px;
 }
 #svg{
   transition:0.5s;
@@ -48,6 +48,45 @@
   font-family: MyriadPro-Bold, Myriad Pro;
   font-weight: 700;
 }
+.cls-55 {
+  fill: #009b00;
+  stroke-miterlimit: 10;
+  stroke: #fff;
+  stroke-width:3px;
+}
+.cls-77{
+  stroke:white;
+  stroke-miterlimit:10;
+  stroke-width:5px;
+}
+.cls-88{
+  stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width:3px;
+}
+.cls-99{stroke:#fff;
+  stroke-miterlimit:10;
+  stroke-width:3px;
+  fill:green;
+}
+.ped_green{
+  fill:#057723;
+}
+.ped_red{
+  fill:red;
+}
+.red_lamp{
+  fill:red;
+}
+.amber_lamp{
+  fill:#ffbf00;
+}
+.circle{
+  fill:#4d4d4d;
+  stroke:#305430;
+  stroke-miterlimit:10;
+}
+
 
 .buttons{
   display:flex;
@@ -65,10 +104,67 @@
     transition:0.5s;
 }
 .buttons button:hover{
-  background:#7CB342
-  ;
+  background:#7CB342;
 }
 
-.buttons .rotatrLeft{
+@keyframes flashing{
+  0%{
+    opacity:0;
+  }
+  40%{
+    opacity:1;
+  }
+  60%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+/* Phase slection section */
+.slave_selection,.phase_selection{
+  border:2px solid gray;
+  padding:10px;
+  border-radius:5px;
+  margin:10px;
+}
+.phase_selection{
 
 }
+  .lamp_types{
+    display: flex;
+    justify-content:space-between;
+  }
+.lamps_selection{
+  display:flex;
+  justify-content: space-between;
+}  
+.valid_lamps,.valid_flashing{
+  display:flex;
+  flex-direction:column;
+}
+.valid_lamps div{
+  display:flex;
+  justify-content: space-between;
+}
+/* end of phase selection section */
+
+/* classes to reflect phase variation */
+.lamp{
+  /* default state of lamps */
+  opacity:0;
+  transition:0.2s;
+}
+.active{
+  /* allows lamp to appear on the arm */
+  opacity:1;
+}
+.flash{
+  /* allows lamp to flash */
+  animation:flashing 1s ease infinite;
+}
+.hide{
+  display:none;
+}
+/* end of phase reflections */
