@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1053.36 507.91">
+   <defs>
+      <style>
+        .road-color {
+            fill: #4d4d4d;
+        }
+
+        .dash-line{
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+            stroke-dasharray: 11.6 11.6;
+        }
+      </style>
+   </defs>
+   <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+         <rect class="road-color" x="152.36" y="187.42" width="646" height="155" />
+         <line class="dash-line" x1="436.76" y1="263.92" x2="164.16" y2="263.92" />
+         <circle class="road-color" cx="799.41" cy="253.95" r="253.95" />
+         <image width="137" height="302" transform="translate(70.67 194.49) rotate(90) scale(0.22)" xlink:href="green_car.png" />
+         <image width="146" height="312" transform="translate(67.1 228.74) rotate(90) scale(0.22)" xlink:href="orange_car.png" />
+         <image width="176" height="315" transform="translate(152 230.5) rotate(90) scale(0.22)" xlink:href="red_car.png" />
+         <image width="186" height="363" transform="translate(152 195.57) rotate(90) scale(0.18 0.2)" xlink:href="taxi.png" />
+         <image width="234" height="467" transform="translate(509.22 183.31) scale(0.2)" xlink:href="traffic_pole.png" />
+         <image width="127" height="127" transform="translate(520.19 218.89) scale(0.2)" xlink:href="amber_lamp.png" />
+         <image width="127" height="127" transform="translate(520.19 243.89) scale(0.2)" xlink:href="green_lamp.png" />
+         <image width="126" height="127" transform="translate(519.64 194.38) scale(0.2)" xlink:href="red_lamp.png" />
+         <image width="83" height="62" transform="translate(556.75 269.46) scale(0.27)" xlink:href="right_arrow.png" />
+         <image width="83" height="62" transform="translate(556.75 233.92) scale(0.27)" xlink:href="left_arrow.png" />
+         <image width="80" height="43" transform="translate(561.16 254.23) scale(0.27)" xlink:href="straight_arrow.png" />
+         <image width="179" height="216" transform="translate(504.81 346.43) rotate(90) scale(0.14)" xlink:href="walking2.png" />
+         <image width="208" height="175" transform="translate(498.69 152.03) rotate(90) scale(0.14)" xlink:href="walking.png" />
+         <image width="495" height="550" transform="translate(521.71 278.94) scale(0.04)" xlink:href="pedestrian_green.png" />
+         <image width="506" height="550" transform="translate(520.94 309.3) scale(0.04)" xlink:href="pedestrian_red.png" />
+      </g>
+   </g>
+</svg>

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { Arm3Component } from './junctions/arm-3/arm-3.component';
 import { ArmService } from './service/arm.service';
+import { SequenceComponent } from './sequence/sequence.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { ArmService } from './service/arm.service';
     AppComponent,
     SidebarComponent,
     Arm3Component,
+    SequenceComponent,
   ],
   imports: [
     BrowserModule,
