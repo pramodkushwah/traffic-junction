@@ -1,3 +1,6 @@
+$speed1: 5s;
+$speed2: 8s;
+
 .box{
     // width:70%;
     // height:70%;
@@ -92,7 +95,7 @@
 // class to be applied for 2 arm junction
 .arms-2{
     .straight_car{
-        animation:moveStraight 3s ease-in infinite;
+        animation:moveStraight $speed1 ease-in infinite;
     }
 
     .left_car{
@@ -105,15 +108,15 @@
 // class to be applied for 4 & 3 arm junction
 .arms-4,.arms-3{
     .straight_car{
-        animation:moveStraight 3s ease-in infinite;
+        animation:moveStraight $speed1 ease-in infinite;
     }
 
     .left_car{
-        animation:moveLeft 4s  ease infinite;
+        animation:moveLeft $speed2  ease infinite;
         transform-origin:left;
     }
     .right_car{
-        animation:moveRight 4s  ease infinite;
+        animation:moveRight $speed2  ease infinite;
         transform-origin:left;
     }
 }
@@ -121,16 +124,16 @@
 // class to be applied for 5 arm junction
 .arms-5{
     .straight_car{
-        animation:moveStraight5arm 3s ease-in infinite;
+        animation:moveStraight5arm $speed1 ease-in infinite;
         transform-origin:left;
     }
 
     .left_car{
-        animation:moveLeft5arm 4s ease-in-out infinite;
+        animation:moveLeft5arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
     .right_car{
-        animation:moveRight5arm 4s ease-in-out infinite;
+        animation:moveRight5arm $speed1 ease-in-out infinite;
         transform-origin:left;
     }
 }
@@ -138,16 +141,16 @@
 // class to be applied for 6 arm junction
 .arms-6{
     .straight_car{
-        animation:moveStraight6arm 3s ease-in infinite;
+        animation:moveStraight6arm $speed1 ease-in infinite;
         transform-origin:left;
     }
 
     .left_car{
-        animation:moveLeft6arm 4s ease-in-out infinite;
+        animation:moveLeft6arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
     .right_car{
-        animation:moveRight6arm 4s ease-in-out infinite;
+        animation:moveRight6arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
 }
@@ -155,16 +158,16 @@
 // class to be applied for 6 arm junction
 .arms-7{
     .straight_car{
-        animation:moveStraight7arm 3s ease-in infinite;
+        animation:moveStraight7arm $speed1 ease-in infinite;
         transform-origin:left;
     }
 
     .left_car{
-        animation:moveLeft7arm 4s ease-in-out infinite;
+        animation:moveLeft7arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
     .right_car{
-        animation:moveRight7arm 4s ease-in-out infinite;
+        animation:moveRight7arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
 }   
@@ -172,16 +175,16 @@
 // class to be applied for 8 arm junction
 .arms-8{
     .straight_car{
-        animation:moveStraight8arm 3s ease-in infinite;
+        animation:moveStraight8arm $speed1 ease-in infinite;
         transform-origin:left;
     }
 
     .left_car{
-        animation:moveLeft8arm 4s ease-in-out infinite;
+        animation:moveLeft8arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
     .right_car{
-        animation:moveRight8arm 4s ease-in-out infinite;
+        animation:moveRight8arm $speed2 ease-in-out infinite;
         transform-origin:left;
     }
 }
@@ -389,13 +392,13 @@
             transform:translate(0,0) rotate(0)
           }
           40%{
-            transform:translate(38%,0) rotate(0)
+            transform:translate(40%,0) rotate(0)
           }
           70%{
-            transform:translate(52%,-10%) rotate(-90deg)
+            transform:translate(40%,-12%) rotate(-135deg)
           }
           100%{
-            transform:translate(52%,-50%) rotate(-90deg)
+            transform:translate(10%,-50%) rotate(-135deg)
           }
     }
     @keyframes moveRight8arm{
@@ -406,10 +409,10 @@
             transform:translate(30%,0) rotate(0)
           }
           70%{
-            transform:translate(55%,10%) rotate(90deg)
+            transform:translate(50%,10%) rotate(135deg)
           }
           100%{
-            transform:translate(55%,50%) rotate(90deg)
+            transform:translate(10%,50%) rotate(135deg)
           }
       }
 //   common animations
